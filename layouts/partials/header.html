@@ -33,6 +33,7 @@
       {{ with .Site.Params.tagline }}
       <p><em>{{ . | markdownify }}</em></p>
       {{ end }}
+      {{ template "_internal/google_analytics.html" . }}
     </header>
 
     {{ partial "nav" . }}
